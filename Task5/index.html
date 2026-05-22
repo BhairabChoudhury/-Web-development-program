@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechPulse Blog - Your Daily Dose of Tech & Innovation</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="TechPulse Blog is your premier source for daily insights, guides, and trends in Web Development, Artificial Intelligence, CSS design, and software engineering.">
+  <meta name="keywords" content="TechPulse, Tech Blog, Web Development, AI, CSS Grid, Flexbox, Software Engineering, Coding Trends 2025">
+  <meta name="author" content="TechPulse Team">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Link to External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <!-- Header Section -->
+  <header id="main-header">
+    <div class="container navbar">
+      <!-- Logo -->
+      <div class="logo-container">
+        <a href="#home">
+          <i class="fa-solid fa-heart-pulse logo-icon"></i>
+          <span class="logo-text">TechPulse<span class="logo-dot">.</span></span>
+        </a>
+      </div>
+
+      <!-- Navigation links -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item active"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#blog-section">Categories</a></li>
+          <li class="nav-item"><a href="#about-section">About</a></li>
+          <li class="nav-item"><a href="#subscribe-section">Subscribe</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Column Actions -->
+      <div class="nav-actions">
+        <!-- Search bar toggle -->
+        <div class="search-box-container">
+          <button class="nav-btn" id="search-toggle-btn" aria-label="Toggle search bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <div class="search-input-wrapper" id="search-input-wrapper">
+            <input type="text" placeholder="Search articles..." id="search-box-field">
+            <button type="submit" aria-label="Search"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Dark/Light Theme Button -->
+        <button class="nav-btn" id="theme-toggle-btn" aria-label="Toggle site theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Mobile Hamburg Menu -->
+        <div class="hamburger" id="hamburger-menu" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Featured Banner Section -->
+  <section class="hero-banner" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-tagline">Featured Article</span>
+        <h1 class="hero-title">The Future of Web: How AI & Edge Tech are Shaping 2026</h1>
+        <div class="hero-meta">
+          <span class="category-tag">Innovation</span>
+          <span><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100&h=100" alt="Sarah Mitchell" class="hero-avatar">Sarah Mitchell</span>
+          <span><i class="fa-solid fa-calendar"></i> May 22, 2026</span>
+          <span><i class="fa-solid fa-clock"></i> 6 min read</span>
+        </div>
+        <a href="#blog-section" class="btn">
+          Read Featured Article <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="https://picsum.photos/800/600?random=10" alt="Tech Future Innovation">
+        <div class="hero-overlay-tag">
+          <i class="fa-solid fa-fire"></i>
+          <span>Trending Post</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Body Grid Section -->
+  <main class="container main-grid" id="blog-section">
+    <!-- Left Column: Blog Posts -->
+    <div class="posts-section">
+      <div class="section-title">
+        <h2>Latest Articles</h2>
+        <span style="font-size: 0.9rem; font-weight: normal; color: var(--text-muted);">Showing 3 of 12 posts</span>
+      </div>
+
+      <div class="posts-grid">
+        <!-- Blog Post 1 -->
+        <article class="blog-card">
+          <div class="card-img-wrapper">
+            <div class="card-img-overlay">
+              <span class="badge webdev">Web Dev</span>
+            </div>
+            <img src="https://picsum.photos/400/250?random=1" alt="Top 10 Web Development Trends in 2025">
+          </div>
+          <div class="card-content">
+            <div>
+              <div class="card-meta-top">
+                <span><i class="fa-solid fa-clock"></i> 5 min read</span>
+                <span>•</span>
+                <span><i class="fa-solid fa-comment"></i> 14 comments</span>
+              </div>
+              <h3 class="card-title">
+                <a href="#blog-post-1">Top 10 Web Development Trends in 2025</a>
+              </h3>
+              <p class="card-summary">
+                The web landscape is changing faster than ever. From serverless rendering runtimes to AI-infused design engines, let's explore the key technologies pushing modern browser capability forward and transforming how developers structure enterprise systems.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="author-wrapper">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100&h=100" alt="Alex Johnson" class="author-avatar">
+                <div class="author-info">
+                  <span class="author-name">Alex Johnson</span>
+                  <span class="post-date">May 10, 2025</span>
+                </div>
+              </div>
+              <a href="#blog-post-1" class="read-more-link">Read More <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-card">
+          <div class="card-img-wrapper">
+            <div class="card-img-overlay">
+              <span class="badge ai">Artificial Intelligence</span>
+            </div>
+            <img src="https://picsum.photos/400/250?random=2" alt="Why Every Developer Should Learn AI Tools">
+          </div>
+          <div class="card-content">
+            <div>
+              <div class="card-meta-top">
+                <span><i class="fa-solid fa-clock"></i> 4 min read</span>
+                <span>•</span>
+                <span><i class="fa-solid fa-comment"></i> 8 comments</span>
+              </div>
+              <h3 class="card-title">
+                <a href="#blog-post-2">Why Every Developer Should Learn AI Tools</a>
+              </h3>
+              <p class="card-summary">
+                AI is not here to replace you; it's here to supercharge your potential. Harnessing developer copilots, automated semantic testing libraries, and LLM orchestration tools enables engineers to ship resilient features 10x faster and focus on system architecture.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="author-wrapper">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100&h=100" alt="Sarah Mitchell" class="author-avatar">
+                <div class="author-info">
+                  <span class="author-name">Sarah Mitchell</span>
+                  <span class="post-date">May 14, 2025</span>
+                </div>
+              </div>
+              <a href="#blog-post-2" class="read-more-link">Read More <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="blog-card">
+          <div class="card-img-wrapper">
+            <div class="card-img-overlay">
+              <span class="badge design">CSS & Design</span>
+            </div>
+            <img src="https://picsum.photos/400/250?random=3" alt="CSS Grid vs Flexbox: Which One to Use?">
+          </div>
+          <div class="card-content">
+            <div>
+              <div class="card-meta-top">
+                <span><i class="fa-solid fa-clock"></i> 3 min read</span>
+                <span>•</span>
+                <span><i class="fa-solid fa-comment"></i> 22 comments</span>
+              </div>
+              <h3 class="card-title">
+                <a href="#blog-post-3">CSS Grid vs Flexbox: Which One to Use?</a>
+              </h3>
+              <p class="card-summary">
+                Choosing between CSS Grid and Flexbox doesn't have to be a battle. While Flexbox is ideal for aligning linear, 1D flow directions, CSS Grid reigns supreme for complex, 2D layouts. Discover the best combinations to build lightweight, fast-loading responsive UIs without grid bloat.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="author-wrapper">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100&h=100" alt="Rahul Sharma" class="author-avatar">
+                <div class="author-info">
+                  <span class="author-name">Rahul Sharma</span>
+                  <span class="post-date">May 17, 2025</span>
+                </div>
+              </div>
+              <a href="#blog-post-3" class="read-more-link">Read More <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pagination Block -->
+      <nav class="pagination-wrapper" aria-label="Blog posts navigation">
+        <ul class="pagination">
+          <li class="page-item disabled"><a href="#" aria-label="Previous page"><i class="fa-solid fa-chevron-left"></i></a></li>
+          <li class="page-item active"><a href="#">1</a></li>
+          <li class="page-item"><a href="#">2</a></li>
+          <li class="page-item"><a href="#">3</a></li>
+          <li class="page-item"><a href="#" aria-label="Next page"><i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Right Column: Sidebar -->
+    <aside class="sidebar" id="about-section">
+      <!-- Widget 1: About -->
+      <section class="widget about-widget">
+        <h3 class="widget-title">About the Blog</h3>
+        <p><strong>TechPulse</strong> is your daily source for state-of-the-art tech reviews, design system guides, and bleeding-edge coding trends. Curated by global industry experts.</p>
+        <div class="widget-social">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </section>
+
+      <!-- Widget 2: Popular Posts -->
+      <section class="widget popular-posts-widget">
+        <h3 class="widget-title">Popular Posts</h3>
+        <div class="popular-posts-list">
+          <article class="popular-post-item">
+            <img src="https://picsum.photos/150/150?random=4" alt="Popular post thumbnail" class="popular-post-img">
+            <div class="popular-post-info">
+              <a href="#pop-1" class="popular-post-title">Mastering React Server Components (RSC)</a>
+              <span class="popular-post-meta">12.5k views • 4 days ago</span>
+            </div>
+          </article>
+          <article class="popular-post-item">
+            <img src="https://picsum.photos/150/150?random=5" alt="Popular post thumbnail" class="popular-post-img">
+            <div class="popular-post-info">
+              <a href="#pop-2" class="popular-post-title">A Complete Guide to CSS Container Queries</a>
+              <span class="popular-post-meta">9.2k views • 1 week ago</span>
+            </div>
+          </article>
+          <article class="popular-post-item">
+            <img src="https://picsum.photos/150/150?random=6" alt="Popular post thumbnail" class="popular-post-img">
+            <div class="popular-post-info">
+              <a href="#pop-3" class="popular-post-title">Why Node.js 22 is a Game Changer for Backends</a>
+              <span class="popular-post-meta">8.8k views • 2 weeks ago</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Widget 3: Categories -->
+      <section class="widget categories-widget">
+        <h3 class="widget-title">Categories</h3>
+        <ul class="categories-list">
+          <li class="category-item">
+            <a href="#cat-web"><span>Web Dev</span> <span class="category-count">12</span></a>
+          </li>
+          <li class="category-item">
+            <a href="#cat-ai"><span>AI & Tools</span> <span class="category-count">8</span></a>
+          </li>
+          <li class="category-item">
+            <a href="#cat-css"><span>CSS & Design</span> <span class="category-count">6</span></a>
+          </li>
+          <li class="category-item">
+            <a href="#cat-js"><span>JavaScript</span> <span class="category-count">10</span></a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Widget 4: Newsletter -->
+      <section class="widget newsletter-widget" id="subscribe-section">
+        <h3 class="widget-title">Newsletter</h3>
+        <p class="newsletter-description">Subscribe to get our weekly digests of high-quality tutorials, assets, and design checklists delivered directly to your inbox.</p>
+        <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); handleSubscribe();">
+          <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Enter your email address" class="newsletter-input" required id="newsletter-email">
+          </div>
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+          <div class="newsletter-success" id="newsletter-success-msg">
+            <i class="fa-solid fa-circle-check"></i> Welcome to TechPulse updates!
+          </div>
+        </form>
+      </section>
+    </aside>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- Footer Col 1 -->
+      <div class="footer-about">
+        <div class="logo-container" style="margin-bottom: 20px;">
+          <a href="#home">
+            <i class="fa-solid fa-heart-pulse logo-icon"></i>
+            <span class="logo-text" style="color: #ffffff;">TechPulse<span class="logo-dot">.</span></span>
+          </a>
+        </div>
+        <p>Your Daily Dose of Tech & Innovation. Shaping developers, software engineers, and digital architects of tomorrow with deep-dive guides.</p>
+        <div class="widget-social">
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+       </div>
+      </div>
+
+      <!-- Footer Col 2 -->
+      <div class="footer-links">
+        <h3 class="footer-col-title">Quick Links</h3>
+        <ul class="footer-links-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#blog-section">Blog Grid</a></li>
+          <li><a href="#about-section">About TechPulse</a></li>
+          <li><a href="#subscribe-section">Weekly Newsletter</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3 -->
+      <div class="footer-recent">
+        <h3 class="footer-col-title">Recent Posts</h3>
+        <div class="footer-recent-posts">
+          <article class="footer-recent-item">
+            <a href="#blog-post-3" class="footer-recent-title">CSS Grid vs Flexbox: Which One to Use?</a>
+            <span class="footer-recent-date">May 17, 2025</span>
+          </article>
+          <article class="footer-recent-item">
+            <a href="#blog-post-2" class="footer-recent-title">Why Every Developer Should Learn AI Tools</a>
+            <span class="footer-recent-date">May 14, 2025</span>
+          </article>
+          <article class="footer-recent-item">
+            <a href="#blog-post-1" class="footer-recent-title">Top 10 Web Development Trends in 2025</a>
+            <span class="footer-recent-date">May 10, 2025</span>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Copyright Bar -->
+    <div class="container footer-bottom">
+      <div>
+        <p>&copy; 2026 TechPulse Blog. Built with passion for modern web engineering.</p>
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#">Terms of Use</a>
+        <span>•</span>
+        <a href="#">Sitemap</a>
+        <span>•</span>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Controls: Back to top -->
+  <div id="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+  <!-- Link to External JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>

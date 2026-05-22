@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHAIRAB CHOUDHURY - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <a href="#home" class="logo">Portfolio.</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content reveal active">
+            <img src="1000636721-02.jpeg" alt="Profile Photo" class="profile-pic">
+            <h1 class="hero-name">Hi, I'm <span class="typing-text" id="typewriter"></span></h1>
+            <p class="hero-subtitle">Web Development Intern</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <button id="download-cv" class="btn btn-secondary">Download CV</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-content reveal">
+            <p class="about-text">
+                I am a passionate Web Development Intern with a strong desire to learn and build modern, responsive web applications. I enjoy turning complex problems into simple, beautiful, and intuitive designs. Constantly exploring new technologies to improve my skills.
+            </p>
+            
+            <div class="education">
+                <h3>Education</h3>
+                <p><strong>B.Tech in Computer Science</strong></p>
+                <p>University of Technology, 2021 - 2025</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card glass">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and functional websites using HTML, CSS, and JS.</p>
+                </div>
+                <div class="service-card glass">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Frontend Design</h3>
+                    <p>Creating intuitive user interfaces with modern CSS frameworks.</p>
+                </div>
+                <div class="service-card glass">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive UI</h3>
+                    <p>Ensuring websites look great on all devices, from mobile to desktop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title reveal">My Skills</h2>
+        <div class="skills-container reveal">
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span><i class="fab fa-html5"></i> HTML</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span><i class="fab fa-css3-alt"></i> CSS</span>
+                    <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span><i class="fab fa-js"></i> JavaScript</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="75%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                    <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span><i class="fab fa-git-alt"></i> Git</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title reveal">My Projects</h2>
+        <div class="projects-grid reveal">
+            <div class="project-card glass">
+                <h3 class="project-title">Brain Cache</h3>
+                <p class="project-desc">Implemented an intelligent data pipeline with OCR and PDF parsing, integrating Retrieval
+Augmented Generation (RAG) for semantic search and intelligent document-based Q&A.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JS</span>
+                </div>
+                <a href="#" class="btn btn-secondary" style="text-align: center;">View Project</a>
+            </div>
+            <div class="project-card glass">
+                <h3 class="project-title">Ai resume Analyzer </h3>
+                <p class="project-desc">Built an AI system to analyze resumes using semantic similarity with job descriptions
+Used transformer embeddings for vector search and accurate skill matching .</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">API</span>
+                </div>
+                <a href="#" class="btn btn-secondary" style="text-align: center;">View Project</a>
+            </div>
+            <div class="project-card glass">
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-desc">A responsive personal portfolio website to showcase projects, skills, and contact information.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JS</span>
+                </div>
+                <a href="#" class="btn btn-secondary" style="text-align: center;">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title reveal">Contact Me</h2>
+        <div class="contact-container reveal">
+            <div class="contact-info">
+                <div class="contact-item glass">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>your.email@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-item glass">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 234 567 8900</p>
+                    </div>
+                </div>
+                <div class="contact-item glass">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>City, State</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form glass" style="padding: 30px;" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+                <input type="email" class="form-control" placeholder="Your Email" required>
+                <textarea class="form-control" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2026 BHAIRAB CHOUDHURY. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
