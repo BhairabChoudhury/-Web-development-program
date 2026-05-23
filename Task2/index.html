@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NeuroFlow - The ultimate cognitive productivity and smart flow-state manager for creators and developers.">
+  <title>NeuroFlow | Smart Cognitive Task & Focus Management</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glowing Blobs -->
+  <div class="glow-blob glow-blob--1"></div>
+  <div class="glow-blob glow-blob--2"></div>
+
+  <!-- 1. HEADER & NAVIGATION-->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="NeuroFlow Home">
+        <div class="logo-icon">
+          <!-- Brain / Wave Flow SVG -->
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+            <path d="M12 6a6 6 0 0 1 6 6c0 2.22-1.2 4.16-3 5.19"/>
+            <path d="M6 12a6 6 0 0 1 6-6"/>
+            <path d="M12 18a6 6 0 0 1-6-6"/>
+          </svg>
+        </div>
+        <span>NeuroFlow</span>
+      </a>
+
+      <!-- Navigation Drawer Menu -->
+      <nav class="nav__menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#features" class="nav__link">Features</a></li>
+          <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="#contact" class="btn btn--secondary btn--sm">Login</a>
+          <a href="#contact" class="btn btn--primary btn--sm">Get Started</a>
+        </div>
+      </nav>
+
+      <!-- Hamburger toggle button -->
+      <button class="hamburger" id="menuToggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+       <!-- 2. HERO SECTION -->
+     
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <!-- Hero Copywriting Info -->
+        <div class="hero__content reveal reveal-right">
+          <div class="hero__badge">
+            <!-- Rocket SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5s3.19 1 5.5-1c1.26-1.5 2.5-3.19 2.5-5.5s-1-2.5-5.5 1z"/>
+              <path d="M19 5c-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5 5.5-2.5 5.5-5.5S22 5 19 5z"/>
+              <path d="M9 15l6-6"/>
+            </svg>
+            <span>Introducing NeuroFlow v2.0</span>
+          </div>
+          <h1 class="hero__title">
+            Unlock Your Ultimate <span class="text-gradient">Flow State</span>
+          </h1>
+          <p class="hero__description">
+            NeuroFlow is the premium cognitive task manager that harmonizes your digital workspace with your natural focus cycle. Eliminate distractions, optimize peak hours, and execute seamlessly.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Get Started Free</a>
+            <a href="#features" class="btn btn--secondary">
+              Learn More
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+          <!-- Hero Trust Metrics -->
+          <div class="hero__stats">
+            <div class="stat-item">
+              <span class="stat-num">100K+</span>
+              <span class="stat-label">Active Minds</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">45%</span>
+              <span class="stat-label">Focus Boost</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">4.9/5</span>
+              <span class="stat-label">App Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium SVG Neural Network Visual Asset -->
+        <div class="hero__visual reveal reveal-left delay-1">
+          <div class="hero__image-glow"></div>
+          <div class="hero__image-wrapper">
+            <!-- Modern Tech Abstract Connected Neural Wave -->
+            <svg viewBox="0 0 500 500" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#6366f1" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.8"/>
+                </linearGradient>
+                <linearGradient id="grad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#ec4899" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.8"/>
+                </linearGradient>
+                <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="15" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+              <!-- Outer Glowing Accent Rings -->
+              <circle cx="250" cy="250" r="180" stroke="url(#grad1)" stroke-width="1.5" stroke-dasharray="8 8" opacity="0.3"/>
+              <circle cx="250" cy="250" r="140" stroke="url(#grad2)" stroke-width="1" stroke-dasharray="16 8" opacity="0.4"/>
+              <circle cx="250" cy="250" r="90" stroke="url(#grad1)" stroke-width="2" opacity="0.15"/>
+
+              <!-- Connective Lines -->
+              <path d="M 120 180 Q 200 130 250 250 T 380 320" stroke="url(#grad1)" stroke-width="2.5" opacity="0.5"/>
+              <path d="M 140 340 Q 250 380 250 250 T 360 160" stroke="url(#grad2)" stroke-width="2" opacity="0.5"/>
+              <path d="M 250 80 L 250 420" stroke="url(#grad1)" stroke-width="1" stroke-dasharray="5 5" opacity="0.2"/>
+              <path d="M 80 250 L 420 250" stroke="url(#grad2)" stroke-width="1" stroke-dasharray="5 5" opacity="0.2"/>
+
+              <!-- Neural Brain Shape / Core Node Group -->
+              <g filter="url(#glow)">
+                <!-- Center Core Node -->
+                <circle cx="250" cy="250" r="28" fill="url(#grad1)" opacity="0.95"/>
+                <circle cx="250" cy="250" r="38" stroke="url(#grad1)" stroke-width="2" opacity="0.4"/>
+                
+                <!-- Satellite Floating Nodes -->
+                <circle cx="180" cy="180" r="12" fill="url(#grad2)"/>
+                <circle cx="320" cy="180" r="16" fill="url(#grad1)"/>
+                <circle cx="150" cy="280" r="10" fill="url(#grad1)"/>
+                <circle cx="350" cy="280" r="14" fill="url(#grad2)"/>
+                <circle cx="250" cy="120" r="8" fill="url(#grad2)"/>
+                <circle cx="250" cy="380" r="12" fill="url(#grad1)"/>
+              </g>
+
+              <!-- Node Outline Rings for Premium Touch -->
+              <circle cx="180" cy="180" r="18" stroke="#8b5cf6" stroke-width="1" opacity="0.5"/>
+              <circle cx="320" cy="180" r="24" stroke="#6366f1" stroke-width="1" opacity="0.5"/>
+              <circle cx="350" cy="280" r="20" stroke="#ec4899" stroke-width="1" opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  3. FEATURE HIGHLIGHTS SECTION -->
+    <section class="section" id="features">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">Core Features</span>
+          <h2 class="section-title">Engineered for Creative and Analytical Minds</h2>
+          <p class="section-desc">Unlock cognitive optimization through our specialized toolkit designed to align perfectly with your neuro-rhythms.</p>
+        </div>
+
+        <!-- 4 Column CSS Grid for Feature Cards -->
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card reveal reveal-up delay-1">
+            <div class="feature-icon-wrapper">
+              <!-- Smart Focus SVG -->
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <h3>Smart Neural Focus</h3>
+            <p>Dynamically scans workspace patterns and triggers custom deep work sessions optimized for your creative peak.</p>
+            <a href="#contact" class="feature-card__learn-more">
+              Learn More 
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card reveal reveal-up delay-2">
+            <div class="feature-icon-wrapper">
+              <!-- Cloud Sync SVG -->
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+              </svg>
+            </div>
+            <h3>Sleek Cloud Sync</h3>
+            <p>Instantly syncs focus records and metrics in real-time across your browser, tablet, and desktop setups securely.</p>
+            <a href="#contact" class="feature-card__learn-more">
+              Learn More
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card reveal reveal-up delay-3">
+            <div class="feature-icon-wrapper">
+              <!-- Focus Analytics SVG -->
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3>Biometric Insights</h3>
+            <p>Unlock deep, custom dashboard reports containing attention-span breakdowns and energy level recommendations.</p>
+            <a href="#contact" class="feature-card__learn-more">
+              Learn More
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card reveal reveal-up delay-4">
+            <div class="feature-icon-wrapper">
+              <!-- Privacy First SVG -->
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <h3>Privacy By Design</h3>
+            <p>Your work data belongs entirely to you. Features end-to-end zero-knowledge encryption on all focus archives.</p>
+            <a href="#contact" class="feature-card__learn-more">
+              Learn More
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  4. TESTIMONIALS SECTION -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">User Reviews</span>
+          <h2 class="section-title">Loved by High-Growth Teams and Creators</h2>
+          <p class="section-desc">See how professionals are mastering their attention limits and scaling outputs with NeuroFlow.</p>
+        </div>
+
+        <!-- Testimonial Grid -->
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card reveal reveal-up delay-1">
+            <div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <!-- 5 Stars SVGs -->
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="testimonial-quote">"NeuroFlow completely redesigned my workday workflow. Instead of burning out by mid-afternoon, my tasks align with my cognitive peaks, keeping me focused and creative."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="avatar-placeholder avatar--indigo">SJ</div>
+              <div class="author-info">
+                <h4>Sarah Jenkins</h4>
+                <span>Lead Designer, Stripe</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card reveal reveal-up delay-2">
+            <div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="testimonial-quote">"Context-switching is the silent execution killer. Using the biometrics tracking combined with keyboard shortcuts has doubled my coding block hours. Simply unmatched."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="avatar-placeholder avatar--pink">DC</div>
+              <div class="author-info">
+                <h4>David Chen</h4>
+                <span>Principal Engineer, TechFlow</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card reveal reveal-up delay-3">
+            <div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="testimonial-quote">"Writing content requires long stretches of high creative attention. The weekly reports showed me exactly when I'm most productive. A total game changer for writers."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="avatar-placeholder avatar--violet">ER</div>
+              <div class="author-info">
+                <h4>Elena Rostova</h4>
+                <span>Creative Director, StudioNine</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--  5. PREMIUM CALL TO ACTION (CTA) SECTION -->
+       
+    <section class="section" id="contact">
+      <div class="container reveal reveal-up">
+        <div class="cta-banner">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to Sync Your Mind's Potential?</h2>
+            <p class="cta-desc">Join thousands of high performers managing tasks, amplifying workflows, and enjoying peak cognitive ease with NeuroFlow.</p>
+            <div class="cta-actions">
+              <a href="#contact" class="btn btn--primary">Get Started Now</a>
+              <a href="#contact" class="btn btn--secondary btn--secondary-dark">Schedule Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--  6. FOOTER COMPONENT -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Footer Branding Column -->
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                <path d="M12 6a6 6 0 0 1 6 6c0 2.22-1.2 4.16-3 5.19"/>
+                <path d="M6 12a6 6 0 0 1 6-6"/>
+                <path d="M12 18a6 6 0 0 1-6-6"/>
+              </svg>
+            </div>
+            <span>NeuroFlow</span>
+          </a>
+          <p>Supercharging human focus and task scheduling through modern cognitive science tracking tools.</p>
+          <!-- Social Icons -->
+          <div class="social-links">
+            <a href="https://twitter.com" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="https://github.com" class="social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Links Columns -->
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#features">Integrations</a></li>
+            <li><a href="#home">Roadmap</a></li>
+            <li><a href="#home">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#home">About Us</a></li>
+            <li><a href="#home">Careers</a></li>
+            <li><a href="#testimonials">Press Kit</a></li>
+            <li><a href="#home">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Newsletter Form -->
+        <div class="footer-newsletter">
+          <h4>Stay Synchronized</h4>
+          <p>Get the latest tips on cognitive science, focus cycles, and task optimization sent to your inbox.</p>
+          <form class="newsletter-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Subscribed to NeuroFlow!');">
+            <input type="email" placeholder="Your work email" required aria-label="Work Email Address">
+            <button type="submit" class="btn btn--primary btn--sm" aria-label="Subscribe to newsletter">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Section -->
+      <div class="footer-bottom">
+        <span class="copyright">&copy; 2026 NeuroFlow Inc. All rights reserved.</span>
+        <div class="footer-policies">
+          <a href="#home">Privacy Policy</a>
+          <a href="#home">Terms of Service</a>
+          <a href="#home">Security Details</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
