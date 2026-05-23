@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapVault - Captured Moments, Infinite Stories</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="SnapVault is a premium responsive photography gallery showcasing high-resolution snapshots of nature, majestic mountains, silent forests, emerald waterfalls, bright skies, and candid wildlife.">
+  <meta name="keywords" content="SnapVault, Photo Gallery, Professional Photography, Mountains, Nature, Forests, Waterfalls, Wildlife, Lightbox Gallery">
+  <meta name="author" content="SnapVault Team">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header / Navigation Bar -->
+  <header id="main-header">
+    <div class="container navbar">
+      <!-- Logo -->
+      <div class="logo-container">
+        <a href="#home">
+          <i class="fa-solid fa-camera-retro logo-icon"></i>
+          <span class="logo-text">SnapVault<span class="logo-dot">.</span></span>
+        </a>
+      </div>
+
+      <!-- Navigation links -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item active"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#gallery-section">Categories</a></li>
+          <li class="nav-item"><a href="#stats-section">About</a></li>
+          <li class="nav-item"><a href="#footer-section">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile Viewports -->
+      <div class="hamburger" id="hamburger-menu" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tagline">SnapVault Showcase</span>
+      <h1 class="hero-title">Explore the world through lens</h1>
+      <p class="hero-subtitle">Step into a world of vibrant wildlife, soaring mountain peaks, silent deep woods, and roaring waterfalls captured in pixel-perfect clarity.</p>
+      <a href="#gallery-section" class="btn">
+        Browse Gallery <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+    
+    <!-- Smooth scroll down arrow icon -->
+    <a href="#gallery-section" class="scroll-indicator" aria-label="Scroll down to gallery">
+      <i class="fa-solid fa-angles-down"></i>
+    </a>
+  </section>
+
+  <!-- Filter Buttons Section -->
+  <section class="filter-section" id="gallery-section">
+    <div class="container">
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="mountains">Mountains</button>
+        <button class="filter-btn" data-filter="forests">Forests</button>
+        <button class="filter-btn" data-filter="waterfalls">Waterfalls</button>
+        <button class="filter-btn" data-filter="sky">Sky</button>
+        <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Grid Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-grid">
+        
+        <!-- Photo Card 1 (Majestic Mountains - featured wide for custom grid feel) -->
+        <article class="gallery-card featured-wide" data-category="mountains" data-id="1" style="animation-delay: 0.05s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Mountains</span>
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Alps Majestic Peak" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Alps Majestic Peak</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Jared Rice</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 2 (Valley Nature) -->
+        <article class="gallery-card" data-category="nature" data-id="2" style="animation-delay: 0.15s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Nature</span>
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600" alt="Green Valley Fields" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Green Valley Fields</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Kalen Emsley</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 3 (Wildlife Fox) -->
+        <article class="gallery-card" data-category="wildlife" data-id="3" style="animation-delay: 0.25s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Wildlife</span>
+            <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=600" alt="Scarlet Fox Glance" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Scarlet Fox Glance</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Vincent van Zalinge</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 4 (Meadow Sky) -->
+        <article class="gallery-card" data-category="sky" data-id="4" style="animation-delay: 0.3s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Sky</span>
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600" alt="Sunset Crimson Horizon" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Sunset Crimson Horizon</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Elena Mozhvilo</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 5 (Waterfall) -->
+        <article class="gallery-card" data-category="waterfalls" data-id="5" style="animation-delay: 0.35s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Waterfalls</span>
+            <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600" alt="Cascading Emerald Falls" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Cascading Emerald Falls</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Bailey Alexander</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 6 (Forest Suspension Bridge - featured wide for custom grid feel) -->
+        <article class="gallery-card featured-wide" data-category="forests" data-id="6" style="animation-delay: 0.4s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Forests</span>
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=600" alt="Suspension Bridge Pathway" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Suspension Bridge Pathway</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Eric Karits</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 7 (Mountain Cottage) -->
+        <article class="gallery-card" data-category="mountains" data-id="7" style="animation-delay: 0.45s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Mountains</span>
+            <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=600" alt="Lake House Retreat" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Lake House Retreat</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Luca Bravo</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 8 (Forest Redwoods) -->
+        <article class="gallery-card" data-category="forests" data-id="8" style="animation-delay: 0.5s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Forests</span>
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600" alt="Golden Forest Sunbeams" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Golden Forest Sunbeams</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>John Towner</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 9 (Wildlife Stag) -->
+        <article class="gallery-card" data-category="wildlife" data-id="9" style="animation-delay: 0.55s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Wildlife</span>
+            <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=600" alt="Stag in the Misty Woods" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Stag in the Misty Woods</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Sven-Erik Arndt</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 10 (Daisy Meadow Wilderness) -->
+        <article class="gallery-card" data-category="nature" data-id="10" style="animation-delay: 0.6s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Nature</span>
+            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=600" alt="Blooming Daisy Wilderness" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Blooming Daisy Wilderness</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Nathan Dumlao</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 11 (Sky reflections) -->
+        <article class="gallery-card" data-category="sky" data-id="11" style="animation-delay: 0.65s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Sky</span>
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600" alt="Midnight Aurora Reflection" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Midnight Aurora Reflection</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Tobias Sjösten</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo Card 12 (Waves coastline waterfalls category) -->
+        <article class="gallery-card" data-category="waterfalls" data-id="12" style="animation-delay: 0.7s;">
+          <div class="card-img-wrapper">
+            <span class="card-badge">Waterfalls</span>
+            <img src="https://images.unsplash.com/photo-1510784722466-f2aa240ease?w=600" alt="Golden Sea Shorelines" loading="lazy">
+            
+            <div class="card-overlay">
+              <div class="overlay-details">
+                <h3 class="photo-title">Golden Sea Shorelines</h3>
+                <div class="photographer">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Sebastian Unrau</span>
+                </div>
+                
+                <div class="card-actions">
+                  <div class="action-btn-group">
+                    <button class="action-icon-btn like-btn" aria-label="Like photo">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="action-icon-btn download-btn" aria-label="Download photo">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="view-more-link">View Fullscreen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Counting Bar Section -->
+  <section class="stats-section" id="stats-section">
+    <div class="container stats-grid">
+      <!-- Stat item 1 -->
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-images"></i></div>
+        <div class="stat-number" data-target="120" data-label="+">0</div>
+        <div class="stat-label">Total Photos</div>
+      </div>
+      <!-- Stat item 2 -->
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-earth-americas"></i></div>
+        <div class="stat-number" data-target="24" data-label="">0</div>
+        <div class="stat-label">Countries</div>
+      </div>
+      <!-- Stat item 3 -->
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-heart"></i></div>
+        <div class="stat-number" data-target="10000" data-label="+">0</div>
+        <div class="stat-label">Total Likes</div>
+      </div>
+      <!-- Stat item 4 -->
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-eye"></i></div>
+        <div class="stat-number" data-target="50000" data-label="+">0</div>
+        <div class="stat-label">Monthly Views</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Overlay Modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+    <!-- Lightbox Close Button -->
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    
+    <!-- Lightbox Navigation Arrows -->
+    <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous photo">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next photo">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <div class="lightbox-container">
+      <div class="lightbox-content-wrapper">
+        <div class="lightbox-img-box">
+          <img src="" alt="" id="lightbox-img">
+        </div>
+        
+        <!-- Photo Details Meta Block -->
+        <div class="lightbox-meta">
+          <div class="lightbox-header">
+            <h2 class="lightbox-title" id="lightbox-title">Photo Title</h2>
+            <span class="lightbox-category" id="lightbox-category">Category</span>
+          </div>
+          <p class="lightbox-desc" id="lightbox-desc">Detailed custom description about the captured photo landscape.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer id="footer-section">
+    <div class="container footer-content">
+      <div class="footer-about">
+        <div class="logo-container">
+          <a href="#home">
+            <i class="fa-solid fa-camera-retro logo-icon"></i>
+            <span class="logo-text">SnapVault<span class="logo-dot">.</span></span>
+          </a>
+        </div>
+        <p class="footer-tagline">Captured Moments, Infinite Stories</p>
+      </div>
+
+      <!-- Social handles and link directories -->
+      <div class="social-links">
+        <a href="https://instagram.com" class="social-icon" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://pinterest.com" class="social-icon" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="https://unsplash.com" class="social-icon" target="_blank" aria-label="Unsplash"><i class="fa-solid fa-wind"></i></a>
+        <a href="https://twitter.com" class="social-icon" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Copyright and site terms -->
+    <div class="container footer-bottom">
+      <div>
+        <p>&copy; 2026 SnapVault Gallery. Crafted for professional photography portfolios.</p>
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Service</a>
+        <span>•</span>
+        <a href="#">Contact Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script tags defer -->
+  <script src="script.js" defer></script>
+</body>
+</html>
